@@ -11,4 +11,11 @@
     <string name="login">登录</string>
     <string name="retrieve_pwd">找回密码</string>
     <string name="registered">注册新账号</string>
+    <string name="NickName">昵称</string>
+    <string name="Male">男</string>
+    <string name="Female">女</string>
+    <string name="pwd">密码</string>
+    <string name="pwd_ok">确认密码</string>
+    <string name="Agree">已阅读并同意</string>
+    <string name="Agreement">《软件许可及服务协议》</string>
 </resources>
