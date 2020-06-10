@@ -18,4 +18,5 @@
     <string name="pwd_ok">确认密码</string>
     <string name="Agree">已阅读并同意</string>
     <string name="Agreement">《软件许可及服务协议》</string>
+    <string name="Example">例如：张三</string>
 </resources>
