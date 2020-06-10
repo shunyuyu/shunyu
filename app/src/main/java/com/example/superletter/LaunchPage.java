@@ -20,7 +20,7 @@ public class LaunchPage extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent=new Intent(LaunchPage.this,MainActivity.class);
+                Intent intent=new Intent(LaunchPage.this, LoginActivity.class);
                 startActivity(intent);
                 finish();
             }
