@@ -181,7 +181,7 @@
         app:layout_constraintGuide_percent="0.44" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/text_agreement"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Agreement"
