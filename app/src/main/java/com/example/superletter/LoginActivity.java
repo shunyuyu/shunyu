@@ -3,11 +3,15 @@ package com.example.superletter;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Toast;
 
 import com.example.superletter.databinding.ActivityLoginBinding;
+
+import java.io.Serializable;
 
 /**
  * @author xushunyu
@@ -15,6 +19,8 @@ import com.example.superletter.databinding.ActivityLoginBinding;
 public class LoginActivity extends AppCompatActivity {
     private ActivityLoginBinding mBinding;
     private boolean bad = true;
+    private static final int RESULT_CODE = 100;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +51,26 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+        mBinding.buttonLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String phone = mBinding.editPhone.getText().toString();
+                String pwd = mBinding.editPwd.getText().toString();
+                SharedPreferences sp = getSharedPreferences("user_info", MODE_PRIVATE);
+                String tempPhone = sp.getString("phone_" + phone, "error");
+                String tempPwd = sp.getString("pwd_" + phone, "error");
+                if (phone.equals(tempPhone) && pwd.equals(tempPwd)) {
+//                    Bundle bundle = new Bundle();
+//                    UserInfo userInfo = new UserInfo(phone,pwd);
+//                    bundle.putSerializable("userInfo",userInfo);
+//                    Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+//                    intent.putExtras(bundle);
+//                    startActivityForResult(intent,RESULT_CODE);
+                } else {
+                    Toast.makeText(LoginActivity.this, "手机号或密码错误！", Toast.LENGTH_LONG).show();
+                }
+            }
+        });
 
 
 
