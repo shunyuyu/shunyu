@@ -2,6 +2,7 @@ package com.example.superletter;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
@@ -34,6 +35,13 @@ public class LoginActivity extends AppCompatActivity {
                     mBinding.editPwd.setHint("请输入密码");
                     bad=true;
                 }
+            }
+        });
+        mBinding.registered.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this,RegisterActivity.class);
+                startActivity(intent);
             }
         });
 
