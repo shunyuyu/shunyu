@@ -71,7 +71,13 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
-
+        mBinding.retrievePwd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(LoginActivity.this,RetrievePwdActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
     }
