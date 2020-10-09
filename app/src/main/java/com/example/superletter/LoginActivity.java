@@ -46,8 +46,8 @@ public class LoginActivity extends AppCompatActivity {
         mBinding.registered.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LoginActivity.this,RegisterActivity.class);
-                startActivity(intent);
+                    Intent intent = new Intent(LoginActivity.this,RegisterActivity.class);
+                    startActivity(intent);
             }
         });
 
@@ -66,6 +66,8 @@ public class LoginActivity extends AppCompatActivity {
 //                    Intent intent = new Intent(MainActivity.this, HomeActivity.class);
 //                    intent.putExtras(bundle);
 //                    startActivityForResult(intent,RESULT_CODE);
+                    Intent intent =new Intent(LoginActivity.this,HomeActivity.class);
+                    startActivity(intent);
                 } else {
                     Toast.makeText(LoginActivity.this, "手机号或密码错误！", Toast.LENGTH_LONG).show();
                 }

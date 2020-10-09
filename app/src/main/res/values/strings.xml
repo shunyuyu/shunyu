@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">超信</string>
+    <string name="app_name">不知道起啥名</string>
     <string name="LaunchPage">启动页面图片</string>
     <string name="Logo">logo</string>
     <string name="text_phone">手机号</string>
@@ -19,4 +19,12 @@
     <string name="Agree">已阅读并同意</string>
     <string name="Agreement">《软件许可及服务协议》</string>
     <string name="Example">例如：张三</string>
+    <string name="textview">TextView</string>
+    <string name="we_chat">WeChat</string>
+    <string name="search">搜索</string>
+    <string name="life">生活</string>
+    <string name="video">影视</string>
+    <string name="chat">聊天</string>
+    <string name="my">我的</string>
+    <string name="phoneA">18420445656</string>
 </resources>
