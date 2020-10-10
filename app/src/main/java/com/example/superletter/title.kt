@@ -12,11 +12,8 @@ class TitleLayout(context: Context, attrs: AttributeSet) : ConstraintLayout(cont
     init {
         val view = LayoutInflater.from(context).inflate(R.layout.title, this).rootView
         mBinding = TitleBinding.bind(view)
-        mBinding.weChat.setOnClickListener {
-            mBinding.imageView12.setImageResource(R.drawable.logo)
-        }
         mBinding.imageView12.setOnClickListener {
-            mBinding.imageView12.setImageResource(R.drawable.jia)
+
         }
 
 //        .setOnClickListener {
